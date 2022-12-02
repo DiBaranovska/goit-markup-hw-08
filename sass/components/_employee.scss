@@ -1,0 +1,40 @@
+.employee {
+    background-color: var(--white-background-color);
+  }
+  
+  .employee__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--dark-text-color);
+    margin-bottom: 10px;
+  }
+  
+  .employee__list {
+    display: flex;
+    margin-top: calc(-1 * var(--indent-card));
+    margin-left: calc(-1 * var(--indent-card));
+  }
+  
+  .emloyee__item {
+    flex-basis: calc(100% / 3 - var(--indent-card));
+    margin-left: var(--indent-card);
+    margin-top: var(--indent-card);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .emloyee__content {
+    padding-top: var(--indent-card);
+    padding-bottom: var(--indent-card);
+    background-color: #ffffff;
+  }
+  
+  .employee__position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+  }

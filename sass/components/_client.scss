@@ -1,0 +1,33 @@
+.client {
+    display: flex;
+    justify-content: center;
+    gap: var(--indent-card);
+  }
+  
+  .client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-fill);
+    border-radius: 4px;
+    transition: border var(--animation);
+
+        &:hover .client__icon,
+        &:focus .client__icon {
+      fill: var(--accent-color);
+    }
+        &:hover,
+        &:focus {
+      border: 1px solid var(--accent-color);
+    }
+    
+  }
+  
+  .client__icon {
+    fill: var(--icon-fill);
+    transition: fill var(--animation);
+  }
+  
+
