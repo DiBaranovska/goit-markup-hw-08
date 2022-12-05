@@ -21,8 +21,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     padding: 40px;
     border-radius: 4px;
     background-color: #ffffff;
@@ -30,6 +30,12 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
   
     transition: transform var(--animation);
+    z-index: 9999;
+
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+      min-height: 581px;
+    }
   }
   
   .backdrop.is-hidden .modal {
