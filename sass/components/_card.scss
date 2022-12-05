@@ -1,8 +1,4 @@
 .card {
-    flex-basis: calc(100% / 3 - var(--indent-card));
-    margin-top: var(--indent-card);
-    margin-left: var(--indent-card);
-  
     transition: box-shadow var(--animation);
         &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -11,6 +7,22 @@
       
          &:hover .card__overlay {
         transform: translateY(0);
+      }
+
+      @media screen and (max-width: 768px){
+        margin-bottom: 30px;
+      }
+
+      @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - var(--indent-card));
+        margin-top: var(--indent-card);
+        margin-left: var(--indent-card);
+      }
+
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - var(--indent-card));
+        margin-top: var(--indent-card);
+        margin-left: var(--indent-card);
       }
   }
   

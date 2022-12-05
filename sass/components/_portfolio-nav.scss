@@ -1,7 +1,19 @@
 .portfolio-nav {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: left;
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
   
   .portfolio-nav__btn {
@@ -22,6 +34,9 @@
         &:focus {
       background-color: var(--accent-color);
       color: var(--white-text-color);
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
     }
   }
   
