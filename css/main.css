@@ -1095,17 +1095,17 @@ footer {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
-@media screen and (max-width: 767px) {
-  .portfolio-nav__btn {
-    margin-bottom: 15px;
-  }
-}
 
 .portfolio-nav__item {
   -webkit-transition: -webkit-box-shadow var(--animation);
   transition: -webkit-box-shadow var(--animation);
   transition: box-shadow var(--animation);
   transition: box-shadow var(--animation), -webkit-box-shadow var(--animation);
+}
+@media screen and (max-width: 767px) {
+  .portfolio-nav__item {
+    margin-bottom: 15px;
+  }
 }
 .portfolio-nav__item:not(:last-child) {
   margin-right: 8px;
