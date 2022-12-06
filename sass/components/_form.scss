@@ -110,6 +110,12 @@
     background-color: var(--btn-active);
   }
   }
-  
+
+  @media screen and (max-width: 1199px) {
+  .feedback-form__agreemen {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
   
   

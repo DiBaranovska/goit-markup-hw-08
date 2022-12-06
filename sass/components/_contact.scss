@@ -29,6 +29,8 @@
       display: flex;
       flex-direction: column;
       margin-left: auto;
+      font-size: 12px;
+      line-height: 1.17;
     }
 
     @media screen and (min-width: 1200px) {
@@ -39,9 +41,17 @@
   }
   
  
-  .contact__icon {
+  .contact__icon--tablet {
     fill: currentColor;
+    @media screen and (min-width:1200px){
+      display: none;
+    }
   }
 
-
+  .contact__icon {
+    fill: currentColor;
+    @media screen and (max-width:1199px){
+      display: none;
+    }
+  }
   
